@@ -4,9 +4,9 @@ function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/photos?_limit=5')
-      .then(response => response.json())
-      .then(data => setPhotos(data));
+    fetch('https://picsum.photos/g/200/300')
+    .then(response => {
+    // Handle response
   }, []);
 
   return (
